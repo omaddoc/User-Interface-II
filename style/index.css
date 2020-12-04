@@ -93,3 +93,48 @@ html {
     padding: 5px 10px;
     margin: 0;
 }
+
+.home-container main .about-me-section {
+    display: flex;
+}
+
+.home-container main .about-me-section .image-container {
+    /* display: inline; */
+}
+
+.home-container main .about-me-section img {
+    width: 40%;
+    padding: 20px;
+}
+
+.home-container main .about-me-section .about-me-container h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-container main .about-me-section .about-me-container .button-container {
+    margin-bottom: 20px;
+}
+
+.home-container main .about-me-section .about-me-container .button-container button {
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    background: #fff;
+}
+
+.home-container main .about-me-section .about-me-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.home-container main .about-me-section .about-me-container .text-container {
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.home-container main .about-me-section .about-me-container .text-container p {
+    font-size: 2.5rem;
+}

@@ -57,7 +57,7 @@ html {
 }
 
 /* GENERAL */
-.active {
+#active {
     background: #000;
     color: #fff;
 }
@@ -69,10 +69,11 @@ html {
 
 .home-container header {
     background: #E0E0E0;
+    box-shadow: 0 2px #888888;
 }
 
 .home-container .header-container {
-    padding: 20px;
+    padding: 40px;
 }
 
 .home-container header h1 {
@@ -120,11 +121,13 @@ html {
     font-size: 1.8rem;
     padding: 5px 10px;
     background: #fff;
+    cursor: pointer;
 }
 
 .home-container main .about-me-section .about-me-container {
     display: flex;
     /* align-items: center; */
+    margin-left: 10%;
     justify-content: center;
     flex-flow: column wrap;
     padding: 20px;
@@ -137,4 +140,73 @@ html {
 
 .home-container main .about-me-section .about-me-container .text-container p {
     font-size: 2.5rem;
+}
+
+.home-container main .gallery {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    /* width: 1400px;
+    margin: 0 auto; */
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.home-container main .gallery .first-project-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.home-container main .gallery .second-project-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.home-container main .gallery .img-box {
+    display: flex;
+    /* justify-content: center; */
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.home-container main .gallery .img-box p {
+    font-size: 2rem;
+}
+
+.home-container main .gallery .img-box a img {
+    width: 300px;
+    margin-bottom: 10px;
+    /* margin: 20px; */
+    /* align-content: space-around; */
+}
+
+footer {
+    background: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 40px;
+}
+
+footer .text-container {
+    margin-bottom: 20px;
+}
+
+footer .text-container p {
+    font-size: 2.5rem;
+}
+
+footer .button-container {
+
+}
+
+footer .button-container button {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background: #fff;
+    cursor: pointer;
 }

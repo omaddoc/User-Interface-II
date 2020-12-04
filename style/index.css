@@ -63,17 +63,19 @@ html {
 }
 
 .home-container {
-    width: 1430px;
-    margin: 0 auto;
+    /* width: 1430px; */
+    /* margin: 0 auto; */
 }
 
 .home-container header {
     background: #E0E0E0;
     box-shadow: 0 2px #888888;
+    width: 100%;
 }
 
 .home-container .header-container {
     padding: 40px;
+    width: 100%;
 }
 
 .home-container header h1 {
@@ -95,16 +97,26 @@ html {
     margin: 0;
 }
 
+.home-container main {
+    /* width: 100%; */
+}
+
 .home-container main .about-me-section {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
 }
 
 .home-container main .about-me-section .image-container {
     /* display: inline; */
+    /* display:flex; */
+    /* justify-content: flex-start; */
 }
 
 .home-container main .about-me-section img {
-    width: 40%;
+    width: 45%;
     padding: 20px;
 }
 
@@ -127,10 +139,12 @@ html {
 .home-container main .about-me-section .about-me-container {
     display: flex;
     /* align-items: center; */
-    margin-left: 10%;
-    justify-content: center;
-    flex-flow: column wrap;
+    /* margin-left: 10%; */
+    /* justify-content: center; */
+    /* flex-flow: column wrap; */
+    flex-direction: column;
     padding: 20px;
+    width: 50%;
 }
 
 .home-container main .about-me-section .about-me-container .text-container {
@@ -143,23 +157,17 @@ html {
 }
 
 .home-container main .gallery {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: space-around;
-    /* width: 1400px;
-    margin: 0 auto; */
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-around; */
+    /* align-items: space-around; */
+    width: 100%; 
+    /* margin: 0 auto;  */
     height: 500px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.home-container main .gallery .first-project-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.home-container main .gallery .second-project-section {
+.home-container main .gallery .project-section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -167,9 +175,11 @@ html {
 
 .home-container main .gallery .img-box {
     display: flex;
+    flex-direction: column;
     /* justify-content: center; */
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .home-container main .gallery .img-box p {
@@ -185,18 +195,23 @@ html {
 
 footer {
     background: #E0E0E0;
+ 
+}
+
+.home-container footer .content-container {
     display: flex;
     justify-content: center;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
     align-items: center;
     padding: 40px;
 }
 
-footer .text-container {
+footer .content-container .text-container {
     margin-bottom: 20px;
 }
 
-footer .text-container p {
+footer .content-container .text-container p {
     font-size: 2.5rem;
 }
 
@@ -204,7 +219,7 @@ footer .button-container {
 
 }
 
-footer .button-container button {
+footer .content-container .button-container button {
     font-size: 2rem;
     padding: 10px 20px;
     background: #fff;

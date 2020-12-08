@@ -231,3 +231,66 @@ footer .content-container .button-container button {
     background: #fff;
     cursor: pointer;
 }
+/* --------------------------------- */
+/* -------- MEDIA QUERIES-------- */
+/* --------------------------------- */
+/* --------- TABLET --------- */
+@media (max-width: 800px) {
+    /* MAIN - About Me */
+    .home-container main .about-me-section .about-me-container {
+        /* width: 0; */
+        align-items: center;
+        justify-content: center;
+        padding: 0 2%;
+    }
+    .home-container main .about-me-section .about-me-container h2 {
+        /* width: 0;
+        align-items: center;
+        justify-content: center; */
+        font-size: 3rem;
+    }
+
+    .home-container main .about-me-section .about-me-container .text-container  {
+        width:100%;
+    }
+    .home-container main .about-me-section .about-me-container p {
+     width: 100%;
+     padding: 3% 0;
+     font-size: 1rem;
+    }
+}
+/* --------- PHONE --------- */
+@media (max-width: 500px) {
+    /* HEADER - Title */
+    .home-container header h1 {
+        text-align: center;
+        font-size: 6rem;
+    }
+    /* NAVIGATION */
+    .home-container header nav {
+        flex-flow: column wrap;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        width: 100%;
+    }
+    /* MAIN - About Me */
+    .home-container main .about-me-section {
+        flex-flow: column wrap;
+    }
+
+    .home-container main .about-me-section .image-container {
+        width: 100%;
+    }
+    .home-container main .about-me-section img {
+        width: 100%;
+    }
+    .home-container main .about-me-section .about-me-container {
+        width: 90%;
+    }
+    /* GALLERY */
+    .home-container main .gallery .img-box a img {
+        width: 200px;
+        height: 200px;
+    }
+}
